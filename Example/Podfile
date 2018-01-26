@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CMBarcodeBright_Example' do
+  pod 'CMBarcodeBright', :path => '../'
+
+  target 'CMBarcodeBright_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
