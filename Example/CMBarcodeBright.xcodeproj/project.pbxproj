@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		63C782D32D037E617A46EC9D /* Pods_CMBarcodeBright_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F3D469560220BC676F7DCA /* Pods_CMBarcodeBright_Tests.framework */; };
+		944E9AFA201B03C200B4B3D4 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E9AF9201B03C200B4B3D4 /* BarcodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		607FACE51AFB9204008FA782 /* CMBarcodeBright_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMBarcodeBright_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9E988390A17F1B12106D095A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		944E9AF9201B03C200B4B3D4 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		9E988390A17F1B12106D095A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A596CF910E2BE4F7DE2E617B /* Pods-CMBarcodeBright_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMBarcodeBright_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMBarcodeBright_Example/Pods-CMBarcodeBright_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CDC53BDB9FE07873FA86386D /* CMBarcodeBright.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CMBarcodeBright.podspec; path = ../CMBarcodeBright.podspec; sourceTree = "<group>"; };
+		CDC53BDB9FE07873FA86386D /* CMBarcodeBright.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CMBarcodeBright.podspec; path = ../CMBarcodeBright.podspec; sourceTree = "<group>"; };
 		E52ECFB75B750803E17AF10F /* Pods-CMBarcodeBright_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMBarcodeBright_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMBarcodeBright_Tests/Pods-CMBarcodeBright_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EAC04D952E2324C3BCDD5CA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EAC04D952E2324C3BCDD5CA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				944E9AF9201B03C200B4B3D4 /* BarcodeViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -363,6 +366,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				944E9AFA201B03C200B4B3D4 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

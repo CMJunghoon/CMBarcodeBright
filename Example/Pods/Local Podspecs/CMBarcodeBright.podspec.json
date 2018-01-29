@@ -1,0 +1,22 @@
+{
+  "name": "CMBarcodeBright",
+  "version": "0.1.0",
+  "summary": "A short description of CMBarcodeBright.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cjh0092@naver.com/CMBarcodeBright",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cjh0092@naver.com": "cjh@renomedia.co.kr"
+  },
+  "source": {
+    "git": "https://github.com/cjh0092@naver.com/CMBarcodeBright.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CMBarcodeBright/Classes/**/*"
+}

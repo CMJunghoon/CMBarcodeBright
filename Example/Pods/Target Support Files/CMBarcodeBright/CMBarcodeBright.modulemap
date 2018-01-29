@@ -1,0 +1,6 @@
+framework module CMBarcodeBright {
+  umbrella header "CMBarcodeBright-umbrella.h"
+
+  export *
+  module * { export * }
+}

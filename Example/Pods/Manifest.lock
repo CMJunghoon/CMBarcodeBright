@@ -1,0 +1,16 @@
+PODS:
+  - CMBarcodeBright (0.1.0)
+
+DEPENDENCIES:
+  - CMBarcodeBright (from `../`)
+
+EXTERNAL SOURCES:
+  CMBarcodeBright:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CMBarcodeBright: 3d6589da1ff17af36e0fb0e81f08b191194ecc62
+
+PODFILE CHECKSUM: c1f9eeb5e04e890e66ac6533b17cb3c1c260708b
+
+COCOAPODS: 1.2.0
