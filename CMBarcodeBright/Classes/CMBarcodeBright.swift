@@ -20,12 +20,23 @@ public class CMBarcodeBright : NSObject {
 
 extension CMBarcodeBright {
     
+    /**
+     It get user bright value.
+     
+     
+     */
     public func initBright () {
         
         userBrightValue = UIScreen.main.brightness
 
     }
     
+    
+    /**
+     Setting BarcodeView about bright.
+     
+     
+     */
     public func setBarcodeViewBright () {
         
         userBrightValue = UIScreen.main.brightness
@@ -33,19 +44,46 @@ extension CMBarcodeBright {
 
     }
     
+    
+    /**
+     it will change user Bright
+     
+     
+     */
     public func restoreBright () {
         
         UIScreen.main.brightness = userBrightValue
     }
     
+    /**
+     User interaction Call(Open) "Home Button","Control Center", "Alert Contorl"
+     
+     - Parameters:
+        - target : BarcodeView Controller Name
+
+     */
     public func applicationWillResignActive (targetClass target : AnyClass ) {
         setUserBright(targetClass: target)
     }
     
+    /**
+     it will show your App
+     
+     - Parameters:
+        - target : BarcodeView Controller Name 
+ 
+     
+     */
     public func applicationWillEnterForeground (targetClass target : AnyClass ) {
         setMaxBrightForBarcodeView(targetClass: target)
     }
     
+    /**
+     it dismiss(Close) "Control Center", "Alert Control"
+     
+     - Parameters:
+        - target : BarcodeView Controller Name
+     */
     public func applicationDidBecomeActive (targetClass target : AnyClass ) {
         setMaxBrightForBarcodeView(targetClass: target)
     }

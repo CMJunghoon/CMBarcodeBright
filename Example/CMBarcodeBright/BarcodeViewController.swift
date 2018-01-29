@@ -8,17 +8,20 @@
 
 import Foundation
 import UIKit
-
+import CMBarcodeBright
 
 class BarcodeViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        CMBarcodeBright.shard.setBarcodeViewBright()
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
-    
-    
+    //BackButton Action.
+    override func viewWillDisappear(_ animated: Bool) {
+        CMBarcodeBright.shard.restoreBright()
+    }
 }
 
 
@@ -27,8 +30,16 @@ class ModalBarcodeViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        CMBarcodeBright.shard.setBarcodeViewBright()
+        
     }
     
+    @IBAction func close(_ sender: Any) {
+        
+        CMBarcodeBright.shard.restoreBright()
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     
     
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NfJ-Cm-C6c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NfJ-Cm-C6c">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,7 +70,20 @@
                     <view key="view" contentMode="scaleToFill" id="x2g-kH-4Yq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcode" translatesAutoresizingMaskIntoConstraints="NO" id="CdD-7b-hnO">
+                                <rect key="frame" x="62" y="134" width="250" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="FJy-R9-9ba"/>
+                                    <constraint firstAttribute="height" constant="130" id="xdN-A9-Vug"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CdD-7b-hnO" firstAttribute="top" secondItem="cZN-LF-vhd" secondAttribute="bottom" constant="70" id="pKU-ex-ECY"/>
+                            <constraint firstItem="CdD-7b-hnO" firstAttribute="centerX" secondItem="x2g-kH-4Yq" secondAttribute="centerX" id="q2Z-PD-Y92"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPw-rI-xdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,12 +107,24 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hb1-F4-Cee"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="PTA-EV-EnG" eventType="touchUpInside" id="Z36-ua-qQv"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcode" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-Et-Jnn">
+                                <rect key="frame" x="62" y="170" width="250" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="IR6-P3-HfC"/>
+                                    <constraint firstAttribute="width" constant="250" id="Woy-fM-Hmw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JDi-Be-ul0" firstAttribute="leading" secondItem="aLS-05-3My" secondAttribute="leadingMargin" constant="100" id="CAG-wc-Wem"/>
+                            <constraint firstItem="r0x-Et-Jnn" firstAttribute="top" secondItem="JDi-Be-ul0" secondAttribute="bottom" constant="50" id="Eb6-j6-P8q"/>
+                            <constraint firstItem="r0x-Et-Jnn" firstAttribute="centerX" secondItem="aLS-05-3My" secondAttribute="centerX" id="OOK-MO-xut"/>
                             <constraint firstItem="JDi-Be-ul0" firstAttribute="top" secondItem="CR8-RB-7Fb" secondAttribute="bottom" constant="50" id="Zbo-e7-yQI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JDi-Be-ul0" secondAttribute="trailing" constant="100" id="lt7-e3-h7S"/>
                         </constraints>
@@ -113,7 +138,7 @@
         <scene sceneID="Iug-RS-BCc">
             <objects>
                 <navigationController id="NfJ-Cm-C6c" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dCQ-Jh-LWp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dCQ-Jh-LWp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -126,4 +151,7 @@
             <point key="canvasLocation" x="-634" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barcode" width="379" height="163"/>
+    </resources>
 </document>
