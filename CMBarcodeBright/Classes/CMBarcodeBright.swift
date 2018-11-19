@@ -95,10 +95,13 @@ extension CMBarcodeBright {
             UIScreen.main.brightness = userBrightValue
         } else if getTopViewController().childViewControllers.last?.isKind(of: target) == true {
             UIScreen.main.brightness = userBrightValue
-        } else {
-            userBrightValue = UIScreen.main.brightness
-            
         }
+        // 0.1.1 delete
+        // After pressed sleepbutton on 100% bright viewcontrller, it changes bright from 100% to 0%. 
+//        else {
+//            userBrightValue = UIScreen.main.brightness
+//
+//        }
     }
     
     private func setMaxBrightForBarcodeView (targetClass target : AnyClass ) {
